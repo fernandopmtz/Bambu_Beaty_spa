@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bambú Beauty & Spa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-flex align-items-center" href="">
+                        <img class="nav_logo_img" src="./IMG/Logo-removebg-preview.png" alt="Logo de Bambú Beauty & Spa">
+                        <span class="nav_logo">Bambú Beauty & Spa</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link active" aria-current="page" href="">Servicios</a>
+                            <a class="nav-link" href="">Nosotros</a>
+                            <a class="nav-link" href="">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <main>
+        <section class="section_intro">
+            <div class="section_intro_content">
+                <h1>El arte del bienestar</h1>
+                <p>Descubre un santuario donde la relajación y la estética se 
+                    entrelazan para renovar tu esencia</p>
+                </p>
+                <a class="btnb-custom" href="">AGENDAR CITA <i class="fa-regular fa-calendar" style="color: rgb(255, 255, 255);"></i></a>
+            </div>
+        </section>
+
+        <section>
+            <div class="section_services">
+                <h2>Nuestros Servicios</h2>
+                <p>Experiencias diseñadas meticulosamente para resaltar
+                    tu belleza natural y restaurar tu equilibrio interior</p>
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="servicer">
+                <div>
+                    <img src="./IMG/masaje_descontracturante.webp" alt="Imagen de spa">
+                </div>    
+                <div class="servicerp">
+                    <h2>Masaje Decontracturante</h2>
+                    <p>Libera tensiones profundas y restaura tu movilidad
+                        muscular en un ambiente de absoluta paz. Nuestros terapeutas utilizan
+                        tecnicas especializadas para disolver el estres acumulado
+                    </p>
+                    <h2>$45.000</h2>
+                    <a class="btn-custom" href="">AGENDAR-></a>
+                </div>  
+            </div>      
+        </section>
+
+        <section>
+            <div class="servicel">   
+                <div class="servicelp">
+                    <h2>Corte y Coloración</h2>
+                    <p>Renueva tu estilo con asesoria profesional personalizada. 
+                        Utilizamos productos premium que protegen e iluminan tu cabello creando locks
+                        vanguardistas o clasicos segun tu preferencia.
+                    </p>
+                    <h2>$65.000</h2>
+                    <a class="btn-custom" href="">AGENDAR-></a>
+                </div>  
+                <div class="servicelpimagen">
+                    <img src="./IMG/corte_y_coloracion.jfif" alt="Imagen de spa">
+                </div> 
+            </div>      
+        </section>
+
+        <section>
+            <div class="servicer">
+                <div>
+                    <img src="./IMG/manicura_permanente.jfif" alt="Imagen de spa">
+                </div>    
+                <div class="servicerp">
+                    <h2>Manicura Permanente </h2>
+                    <p>Cuidado experto para tus manos con esmaltado de larga duracion y 
+                        acabado impecable. Un mimo necesario que realza la elegancia de tus movimientos cotidianos.
+                    </p>
+                    <h2>$25.000</h2>
+                    <a class="btn-custom" href="">AGENDAR-></a>
+                </div>  
+            </div>      
+        </section>
+
+        <section>
+            <div class="section_reserva">
+                <div class="reserva_info">
+                    <h2>Reserva tu momento</h2>
+                    <p>El primer paso hacia tu bienestar. Selecciona el servicio deseado 
+                        y encontremos el espacio perfecto para ti.</p>
+                    <h3><i class="fa-solid fa-phone" style="color: rgb(0, 0, 0);"></i>+56 9 1234 5678</h3>
+                    <h3><i class="fa-solid fa-map-marker" style="color: rgb(0, 0, 0);"></i>Avenida del Mar 1234, La Serena</h3>
+                </div>
+
+                <div class="reserva">
+                    <h3>Servicio</h3>
+                    <select name="servicio" id="servicio">
+                        <option value="">Masaje Decontracturante</option>
+                        <option value="">Corte y Coloración</option>
+                        <option value="">Manicura Permanente</option>
+                    </select>
+                    <h3>Fecha</h3>
+                    <input type="date" name="fecha">
+                    <br>
+                    <a class="btnb-custom" href="">CONFIRMAR MI RESERVA <i class="fa-solid fa-check" style="color: rgb(255, 255, 255);"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="el_pie_de_pagina">
+            <div class="footer_info">
+                <h1>Bambú Beauty & Spa</h1>
+                <p>Tu santuario de belleza y bienestar en el corazon de la Serena.</p>
+            </div>
+
+            <div>
+                <h3>Enlaces</h3>
+                <a href="">Privacy Policy</a>
+                <a href="">Términos y Condiciones</a>
+                <a href="">Contactanos</a>
+            </div>
+
+            <div>
+                <h3>Contacto</h3>
+                <p>+56 9 1234 5678</p>
+                <p>abcd@gmail.com</p>
+            </div>
+
+        </footer>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
