@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bambú Beauty & Spa</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
     <div>
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand d-flex align-items-center" href="">
+                    <a class="navbar-brand d-flex align-items-center" href="#">
                         <img class="nav_logo_img" src="./IMG/Logo-removebg-preview.png" alt="Logo de Bambú Beauty & Spa">
                         <span class="nav_logo">Bambú Beauty & Spa</span>
                     </a>
@@ -23,9 +22,9 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <div class="navbar-nav ms-auto">
-                            <a class="nav-link active" aria-current="page" href="">Servicios</a>
-                            <a class="nav-link" href="">Nosotros</a>
-                            <a class="nav-link" href="">Agendar</a>
+                            <a class="nav-link active" aria-current="page" href="#">Servicios</a>
+                            <a class="nav-link" href="#">Nosotros</a>
+                            <a class="nav-link" href="#">Agendar</a>
                         </div>
                     </div>
                 </div>
@@ -34,38 +33,60 @@
     </div>
 
     <main>
-        <section class="section_intro">
-            <div class="section_intro_content">
-                <h1>El arte del bienestar</h1>
-                <p>Descubre un santuario donde la relajación y la estética se 
-                    entrelazan para renovar tu esencia</p>
-                </p>
-                <a class="btnb-custom" href="">AGENDAR CITA <i class="fa-regular fa-calendar" style="color: rgb(255, 255, 255);"></i></a>
+        <section class="section_intro position-relative d-flex align-items-center justify-content-center">
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.25);"></div>
+            
+            <div class="hero-glass-card text-center">
+                <div class="hero-subtitle"><i class="fa-solid fa-leaf me-2"></i>Beauty & Spa</div>
+                <h1 class="hero-title">El arte del bienestar</h1>
+                
+                <div id="carruselConsejos" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4500">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <i class="fa-solid fa-quote-left mb-3 fs-3" style="color: #eeb8b8;"></i>
+                            <p class="consejo-texto">"La verdadera belleza comienza con una piel hidratada. Complementar tu rutina diaria con tratamientos faciales profundos es el secreto para una luminosidad natural."</p>
+                        </div>
+                        <div class="carousel-item">
+                            <i class="fa-solid fa-quote-left mb-3 fs-3" style="color: #eeb8b8;"></i>
+                            <p class="consejo-texto">"Un masaje descontracturante va más allá del alivio físico; es una pausa necesaria para restaurar tu energía vital y encontrar el equilibrio."</p>
+                        </div>
+                        <div class="carousel-item">
+                            <i class="fa-solid fa-quote-left mb-3 fs-3" style="color: #eeb8b8;"></i>
+                            <p class="consejo-texto">"Tus manos comunican tu esencia. Un cuidado meticuloso no solo realza tu elegancia, sino que proyecta seguridad en cada uno de tus movimientos."</p>
+                        </div>
+                        <div class="carousel-item">
+                            <i class="fa-solid fa-quote-left mb-3 fs-3" style="color: #eeb8b8;"></i>
+                            <p class="consejo-texto">"Renovar tu estilo con productos premium protege la estructura de tu cabello, asegurando un color vibrante que nunca pasa desapercibido."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-indicators hero-carousel-indicators position-relative mt-4 mb-0">
+                        <button type="button" data-bs-target="#carruselConsejos" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                        <button type="button" data-bs-target="#carruselConsejos" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carruselConsejos" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carruselConsejos" data-bs-slide-to="3"></button>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section>
             <div class="section_services">
                 <h2>Nuestros Servicios</h2>
-                <p>Experiencias diseñadas meticulosamente para resaltar
-                    tu belleza natural y restaurar tu equilibrio interior</p>
-                </p>
+                <p>Experiencias diseñadas meticulosamente para resaltar tu belleza natural y restaurar tu equilibrio interior.</p>
             </div>
         </section>
 
         <section>
             <div class="servicer">
                 <div>
-                    <img src="./IMG/masaje_descontracturante.webp" alt="Imagen de spa">
+                    <img src="./IMG/masaje_descontracturante.webp" alt="Masaje Descontracturante">
                 </div>    
                 <div class="servicerp">
-                    <h2>Masaje Decontracturante</h2>
-                    <p>Libera tensiones profundas y restaura tu movilidad
-                        muscular en un ambiente de absoluta paz. Nuestros terapeutas utilizan
-                        tecnicas especializadas para disolver el estres acumulado
-                    </p>
+                    <h2>Masaje Descontracturante</h2>
+                    <p>Libera tensiones profundas y restaura tu movilidad muscular en un ambiente de absoluta paz. Nuestros terapeutas utilizan técnicas especializadas para disolver el estrés acumulado.</p>
                     <h2>$45.000</h2>
-                    <a class="btn-custom" href="">AGENDAR-></a>
+                    <a class="btn-custom text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#reservaModal" data-bs-servicio="Masaje Descontracturante">AGENDAR -></a>
                 </div>  
             </div>      
         </section>
@@ -74,15 +95,12 @@
             <div class="servicel">   
                 <div class="servicelp">
                     <h2>Corte y Coloración</h2>
-                    <p>Renueva tu estilo con asesoria profesional personalizada. 
-                        Utilizamos productos premium que protegen e iluminan tu cabello creando locks
-                        vanguardistas o clasicos segun tu preferencia.
-                    </p>
+                    <p>Renueva tu estilo con asesoría profesional personalizada. Utilizamos productos premium que protegen e iluminan tu cabello creando looks vanguardistas o clásicos según tu preferencia.</p>
                     <h2>$65.000</h2>
-                    <a class="btn-custom" href="">AGENDAR-></a>
+                    <a class="btn-custom text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#reservaModal" data-bs-servicio="Corte y Coloración">AGENDAR -></a>
                 </div>  
                 <div class="servicelpimagen">
-                    <img src="./IMG/corte_y_coloracion.jfif" alt="Imagen de spa">
+                    <img src="./IMG/corte_y_coloracion.jfif" alt="Corte y Coloración">
                 </div> 
             </div>      
         </section>
@@ -90,66 +108,335 @@
         <section>
             <div class="servicer">
                 <div>
-                    <img src="./IMG/manicura_permanente.jfif" alt="Imagen de spa">
+                    <img src="./IMG/manicura_permanente.jfif" alt="Manicura Permanente">
                 </div>    
                 <div class="servicerp">
                     <h2>Manicura Permanente </h2>
-                    <p>Cuidado experto para tus manos con esmaltado de larga duracion y 
-                        acabado impecable. Un mimo necesario que realza la elegancia de tus movimientos cotidianos.
-                    </p>
+                    <p>Cuidado experto para tus manos con esmaltado de larga duración y acabado impecable. Un mimo necesario que realza la elegancia de tus movimientos cotidianos.</p>
                     <h2>$25.000</h2>
-                    <a class="btn-custom" href="">AGENDAR-></a>
+                    <a class="btn-custom text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#reservaModal" data-bs-servicio="Manicura Permanente">AGENDAR -></a>
                 </div>  
             </div>      
         </section>
 
         <section>
+            <div class="servicel">   
+                <div class="servicelp">
+                    <h2>Limpieza Facial Profunda</h2>
+                    <p>Renueva tu cutis eliminando impurezas y células muertas. Un tratamiento revitalizante que devuelve la luminosidad y frescura natural a tu rostro mediante aparatología de vanguardia.</p>
+                    <h2>$35.000</h2>
+                    <a class="btn-custom text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#reservaModal" data-bs-servicio="Limpieza Facial Profunda">AGENDAR -></a>
+                </div>  
+                <div class="servicelpimagen">
+                    <img src="/IMG/limpieza_facial.jpeg" alt="Limpieza Facial">
+                </div> 
+            </div>      
+        </section>
+
+        <section>
+            <div class="servicer">
+                <div>
+                    <img src="/IMG/pedicura_spa.png" alt="Pedicura Spa">
+                </div>    
+                <div class="servicerp">
+                    <h2>Pedicura Spa Rejuvenecedora</h2>
+                    <p>Relajación total para tus pies. Incluye exfoliación, hidratación profunda con parafina y esmaltado. El descanso perfecto para quienes están en constante movimiento.</p>
+                    <h2>$28.000</h2>
+                    <a class="btn-custom text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#reservaModal" data-bs-servicio="Pedicura Spa Rejuvenecedora">AGENDAR -></a>
+                </div>  
+            </div>      
+        </section>
+
+        <section class="section_testimonios text-center">
+            <h2 class="mb-4" style="color: #333;">Lo que dicen nuestros clientes</h2>
+            
+            <div id="carruselComentarios" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner" id="contenedorComentarios">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <div class="comentario-card">
+                            <p>"Excelente servicio, el masaje descontracturante me dejó como nueva. La atención es de primera, totalmente recomendado."</p>
+                            <h4>- María Fernanda R.</h4>
+                            <div class="estrellas">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <div class="comentario-card">
+                            <p>"Fui por un cambio de look y superaron mis expectativas. Los productos que usan dejaron mi cabello súper brillante."</p>
+                            <h4>- Camila Soto</h4>
+                            <div class="estrellas">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselComentarios" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselComentarios" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+
+            <button class="btnb-custom mt-4 border-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalNuevoComentario">
+                DEJAR UN COMENTARIO <i class="fa-solid fa-comment-medical ms-1" style="color: rgb(255, 255, 255);"></i>
+            </button>
+        </section>
+
+        <section id="reserva_general">
             <div class="section_reserva">
                 <div class="reserva_info">
                     <h2>Reserva tu momento</h2>
-                    <p>El primer paso hacia tu bienestar. Selecciona el servicio deseado 
-                        y encontremos el espacio perfecto para ti.</p>
+                    <p>El primer paso hacia tu bienestar. Selecciona el servicio deseado y encontremos el espacio perfecto para ti.</p>
                     <h3><i class="fa-solid fa-phone" style="color: rgb(0, 0, 0);"></i>+56 9 1234 5678</h3>
                     <h3><i class="fa-solid fa-map-marker" style="color: rgb(0, 0, 0);"></i>Avenida del Mar 1234, La Serena</h3>
                 </div>
 
                 <div class="reserva">
                     <h3>Servicio</h3>
-                    <select name="servicio" id="servicio">
-                        <option value="">Masaje Decontracturante</option>
-                        <option value="">Corte y Coloración</option>
-                        <option value="">Manicura Permanente</option>
+                    <select class="form-select mb-3" name="servicio" id="servicio_general">
+                        <option value="">Selecciona un servicio...</option>
+                        <option value="Masaje Decontracturante">Masaje Descontracturante</option>
+                        <option value="Corte y Coloración">Corte y Coloración</option>
+                        <option value="Manicura Permanente">Manicura Permanente</option>
+                        <option value="Limpieza Facial Profunda">Limpieza Facial Profunda</option>
+                        <option value="Pedicura Spa">Pedicura Spa</option>
                     </select>
                     <h3>Fecha</h3>
-                    <input type="date" name="fecha">
-                    <br>
-                    <a class="btnb-custom" href="">CONFIRMAR MI RESERVA <i class="fa-solid fa-check" style="color: rgb(255, 255, 255);"></i></a>
+                    <input class="form-control mb-4" type="date" name="fecha">
+                    <button class="btnb-custom border-0 w-100" onclick="alert('Función de reserva temporal')">CONFIRMAR MI RESERVA <i class="fa-solid fa-check" style="color: rgb(255, 255, 255);"></i></button>
                 </div>
             </div>
         </section>
 
-        <footer class="el_pie_de_pagina">
+        <footer>
             <div class="footer_info">
                 <h1>Bambú Beauty & Spa</h1>
-                <p>Tu santuario de belleza y bienestar en el corazon de la Serena.</p>
+                <p>Tu santuario de belleza y bienestar en el corazón de La Serena.</p>
             </div>
-
             <div>
                 <h3>Enlaces</h3>
-                <a href="">Privacy Policy</a>
-                <a href="">Términos y Condiciones</a>
-                <a href="">Contactanos</a>
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos y Condiciones</a>
+                <a href="#">Contáctanos</a>
             </div>
-
             <div>
                 <h3>Contacto</h3>
                 <p>+56 9 1234 5678</p>
-                <p>abcd@gmail.com</p>
+                <p>contacto@bambuspa.cl</p>
             </div>
-
         </footer>
-
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <div class="modal fade" id="reservaModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-elegante">
+                <div class="modal-header modal-header-spa">
+                    <h5 class="modal-title fw-bold"><i class="fa-solid fa-spa me-2"></i> Agendar tu Experiencia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body p-4">
+                    
+                    <div class="info-servicio-caja p-3 mb-4 shadow-sm">
+                        <h4 id="dinamicoTituloServicio" class="fw-bold mb-1" style="color: #333;">Servicio</h4>
+                        <p id="dinamicoDescServicio" class="small mb-3" style="color: #666;">Cargando descripción...</p>
+                        <div class="d-flex justify-content-between fw-bold" style="color: #eeb8b8;">
+                            <span><i class="fa-regular fa-clock me-1"></i> <span id="dinamicoDuracion">-- min</span></span>
+                            <span><i class="fa-solid fa-tag me-1"></i> <span id="dinamicoPrecio">$0</span></span>
+                        </div>
+                    </div>
+
+                    <form id="formularioReserva">
+                        <input type="hidden" id="modalServicioOculto" name="servicio">
+                        <div class="mb-3">
+                            <label class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" placeholder="Ej: Valentina Paz" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Teléfono / WhatsApp</label>
+                            <input type="tel" class="form-control" placeholder="+56 9..." required>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 mb-3">
+                                <label class="form-label">Fecha</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <label class="form-label">Hora</label>
+                                <input type="time" class="form-control" required>
+                            </div>
+                        </div>
+                    </form>
+                    
+                    <div id="alertaExito" class="alert alert-success d-none mt-3 text-center rounded-4">
+                        <i class="fa-solid fa-check-circle mb-2 fs-3"></i><br>
+                        ¡Reserva solicitada! Te contactaremos para confirmar.
+                    </div>
+                </div>
+                <div class="modal-footer border-0 p-4 pt-0">
+                    <button type="button" class="btn text-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btnb-custom m-0 border-0 shadow-sm" id="btnConfirmarReserva">CONFIRMAR RESERVA</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalNuevoComentario" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-elegante">
+                <div class="modal-header modal-header-spa">
+                    <h5 class="modal-title fw-bold"><i class="fa-regular fa-comment-dots me-2"></i> Cuéntanos tu experiencia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="formComentario">
+                        <div class="mb-3">
+                            <label class="form-label">Tu Nombre</label>
+                            <input type="text" class="form-control" id="inputNombreAutor" placeholder="Ej: Juan P." required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Calificación</label>
+                            <select class="form-select" id="selectEstrellas">
+                                <option value="5">⭐⭐⭐⭐⭐ (Excelente)</option>
+                                <option value="4">⭐⭐⭐⭐ (Muy bueno)</option>
+                                <option value="3">⭐⭐⭐ (Bueno)</option>
+                                <option value="2">⭐⭐ (Regular)</option>
+                                <option value="1">⭐ (Malo)</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Tu Comentario</label>
+                            <textarea class="form-control" id="inputTextoComentario" rows="3" placeholder="¿Qué tal te pareció nuestro servicio?" required></textarea>
+                        </div>
+                    </form>
+                    
+                    <div id="alertaComentarioExito" class="alert alert-success d-none mt-3 text-center rounded-4">
+                        <i class="fa-solid fa-heart mb-2 fs-3" style="color: #eeb8b8;"></i><br>
+                        ¡Gracias por tu comentario! Lo hemos agregado.
+                    </div>
+                </div>
+                <div class="modal-footer border-0 p-4 pt-0">
+                    <button type="button" class="btn text-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btnb-custom m-0 border-0 shadow-sm" id="btnPublicarComentario">PUBLICAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        const datosServicios = {
+            "Masaje Descontracturante": {
+                descripcion: "Terapia de presión profunda para liberar nudos musculares y tensión crónica en cuello y espalda.",
+                duracion: "60 min",
+                precio: "$45.000"
+            },
+            "Corte y Coloración": {
+                descripcion: "Asesoría de imagen, tintura premium y corte estilizado con lavado spa incluido.",
+                duracion: "120 min",
+                precio: "$65.000"
+            },
+            "Manicura Permanente": {
+                descripcion: "Limpieza profunda, esmaltado en gel de larga duración y exquisito masaje de manos.",
+                duracion: "45 min",
+                precio: "$25.000"
+            },
+            "Limpieza Facial Profunda": {
+                descripcion: "Exfoliación, extracción de impurezas, mascarilla calmante y aparatología de vanguardia.",
+                duracion: "50 min",
+                precio: "$35.000"
+            },
+            "Pedicura Spa Rejuvenecedora": {
+                descripcion: "Baño de pies, exfoliación, hidratación profunda con parafina y esmaltado tradicional.",
+                duracion: "60 min",
+                precio: "$28.000"
+            }
+        };
+
+        $(document).ready(function() {
+            // Lógica Modal Reserva
+            $('#reservaModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget); 
+                var nombreServicio = button.data('bs-servicio'); 
+                
+                var detalles = datosServicios[nombreServicio];
+                var modal = $(this);
+                
+                if(nombreServicio) {
+                    modal.find('#dinamicoTituloServicio').text(nombreServicio);
+                    modal.find('#modalServicioOculto').val(nombreServicio);
+                }
+                
+                if (detalles) {
+                    modal.find('#dinamicoDescServicio').text(detalles.descripcion);
+                    modal.find('#dinamicoDuracion').text(detalles.duracion);
+                    modal.find('#dinamicoPrecio').text(detalles.precio);
+                }
+
+                $('#alertaExito').addClass('d-none');
+                $('#formularioReserva').show();
+                $('.modal-footer').show();
+                $('#formularioReserva')[0].reset();
+            });
+
+            $('#btnConfirmarReserva').click(function() {
+                $('#formularioReserva').hide();
+                $('.modal-footer').hide();
+                $('#alertaExito').removeClass('d-none');
+                
+                setTimeout(function() {
+                    $('#reservaModal').modal('hide');
+                }, 2500);
+            });
+
+            // Lógica Modal Comentarios
+            $('#btnPublicarComentario').click(function() {
+                var nombre = $('#inputNombreAutor').val().trim();
+                var texto = $('#inputTextoComentario').val().trim();
+                var cantidadEstrellas = $('#selectEstrellas').val();
+
+                if(nombre === "" || texto === "") {
+                    alert("Por favor, completa tu nombre y el comentario.");
+                    return;
+                }
+
+                var estrellasHTML = '';
+                for(var i = 0; i < cantidadEstrellas; i++) {
+                    estrellasHTML += '<i class="fa-solid fa-star"></i>';
+                }
+
+                var nuevoItemHTML = `
+                <div class="carousel-item">
+                    <div class="comentario-card">
+                        <p>"${texto}"</p>
+                        <h4>- ${nombre}</h4>
+                        <div class="estrellas">${estrellasHTML}</div>
+                    </div>
+                </div>`;
+
+                $('#contenedorComentarios').append(nuevoItemHTML);
+                var totalComentarios = $('.carousel-item').length;
+                $('#carruselComentarios').carousel(totalComentarios - 1);
+
+                $('#formComentario').hide();
+                $('.modal-footer').hide();
+                $('#alertaComentarioExito').removeClass('d-none');
+
+                setTimeout(function() {
+                    $('#modalNuevoComentario').modal('hide');
+                    $('#alertaComentarioExito').addClass('d-none');
+                    $('#formComentario').show();
+                    $('.modal-footer').show();
+                    $('#formComentario')[0].reset();
+                }, 2500);
+            });
+        });
+    </script>
 </body>
 </html>
